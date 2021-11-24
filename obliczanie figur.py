@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import math
-
+#siema dominos elo benc beka 
 
 class Figure():
     @abstractmethod
@@ -59,8 +59,8 @@ while True:
     except ValueError:
         print("Nie ma takiej opcji!")
         quit()
-
-
+#siema dominos elo benc beka 
+#siema dominos elo benc beka 
 while True:
     try:
         if user_choice == 1:
@@ -76,6 +76,6 @@ while True:
         break
     except ValueError:
         print("Błędna liczba")
-
+#siema dominos elo benc beka 
 print("Pole wynosi: ",shape.area())
 print("Obwód wynosi: ",shape.perimeter())
