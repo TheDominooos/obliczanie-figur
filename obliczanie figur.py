@@ -12,9 +12,9 @@ class Figure(ABC):
         pass
 
 class Rectangle(Figure):
-    def __init__(self, p1, p2):
-        self.side_1 = p1
-        self.side_2 = p2
+    def __init__(self, side_1, side_2):
+        self.side_1 = side_1
+        self.side_2 = side_2
     
     def area(self):
         return self.side_1 * self.side_2
@@ -24,8 +24,8 @@ class Rectangle(Figure):
 
 
 class Square(Rectangle): 
-    def __init__(self, p1):
-        super().__init__(p1, p1)
+    def __init__(self, side_1):
+        super().__init__(side_1, side_1)
 
 
 class Triangle(Figure):
