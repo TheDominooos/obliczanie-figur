@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 from abc import ABC, abstractmethod
 import math
 
@@ -90,3 +92,14 @@ while True:
 
 print("Pole wynosi: ",shape.area())
 print("Obwód wynosi: ",shape.perimeter())
+
+def test_if_negative():
+    assert shape.perimeter < 0
+
+# test_with_pytest.py
+
+def test_always_passes():
+    assert True
+
+def test_always_fails():
+    assert False
