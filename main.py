@@ -1,4 +1,4 @@
-from obliczanie_figur import *
+from figure_calculations import *
 
 dictionary = {
     1: {"shape_class": Square, "input": ["Podaj 1 bok: "]},
