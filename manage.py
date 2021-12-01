@@ -8,18 +8,15 @@ def figure():
 @click.option('-area', required=False, is_flag=True)
 @click.option('-perimeter', required=False, is_flag=True)
 @click.argument('side_1', default=1, type=int)
-
 def square(side_1, area, perimeter):
     object = Square(side_1)
-    global nigga
-    def nigga():
-        if area:
-            click.echo(f"Pole wynosi: {object.area()}")
-        elif perimeter:
-            click.echo(f"Obwód wynosi: {object.perimeter()}")
-        else:
-            click.echo("Błędna opcja")
-    nigga()
+    if area:
+        click.echo(f"Pole wynosi: {object.area()}")
+    elif perimeter:
+        click.echo(f"Obwód wynosi: {object.perimeter()}")
+    else:
+        click.echo("Błędna opcja")
+
 
 @figure.command()
 @click.option('-area', required=False, is_flag=True)
@@ -29,7 +26,12 @@ def square(side_1, area, perimeter):
 
 def rectangle(side_1, side_2, area, perimeter):
     object = Rectangle(side_1, side_2)
-    nigga()
+    if area:
+        click.echo(f"Pole wynosi: {object.area()}")
+    elif perimeter:
+        click.echo(f"Obwód wynosi: {object.perimeter()}")
+    else:
+        click.echo("Błędna opcja")
 
 @figure.command()
 @click.option('-area', required=False, is_flag=True)
