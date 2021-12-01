@@ -15,10 +15,8 @@ def square(side_1, area, perimeter):
     object = Square(side_1)
     if area:
         click.echo(f"Pole wynosi: {object.area()}")
-    elif perimeter:
+    if perimeter:
         click.echo(f"Obwód wynosi: {object.perimeter()}")
-    else:
-        click.echo("Błędna opcja")
 
 
 @figure.command()
@@ -30,10 +28,8 @@ def rectangle(side_1, side_2, area, perimeter):
     object = Rectangle(side_1, side_2)
     if area:
         click.echo(f"Pole wynosi: {object.area()}")
-    elif perimeter:
+    if perimeter:
         click.echo(f"Obwód wynosi: {object.perimeter()}")
-    else:
-        click.echo("Błędna opcja")
 
 
 @figure.command()
@@ -47,10 +43,8 @@ def triangle(height, side_1, side_2, side_3, area, perimeter):
     object = Triangle(height, side_1, side_2, side_3)
     if area:
         click.echo(f"Pole wynosi: {object.area()}")
-    elif perimeter:
+    if perimeter:
         click.echo(f"Obwód wynosi: {object.perimeter()}")
-    else:
-        click.echo("Błędna opcja")
 
 
 @figure.command()
@@ -61,10 +55,8 @@ def wheel(radius, area, perimeter):
     object = Wheel(radius)
     if area:
         click.echo(f"Pole wynosi: {object.area()}")
-    elif perimeter:
+    if perimeter:
         click.echo(f"Obwód wynosi: {object.perimeter()}")
-    else:
-        click.echo("Błędna opcja")
 
 
 if __name__ == "__main__":
