@@ -1,5 +1,5 @@
 import click
-from obliczanie_figur import *
+from figure_calculations import *
 
 
 @click.group()
